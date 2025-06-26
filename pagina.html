@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GymPowerStyle - Transformá tu cuerpo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Oswald:wght@300;500&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Montserrat', sans-serif;
+      color: #222;
+      background: #f9f9f9;
+      line-height: 1.6;
+    }
+    header {
+      background: #ff4d4d;
+      color: #fff;
+      padding: 80px 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-family: 'Oswald', sans-serif;
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.3rem;
+    }
+    .section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    .section h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      color: #333;
+      font-size: 2.2rem;
+      font-family: 'Oswald', sans-serif;
+    }
+    .card {
+      background: #fff;
+      padding: 30px;
+      margin-bottom: 30px;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 20px;
+    }
+    .card img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+    .card-content {
+      flex: 1;
+    }
+    .card h3 {
+      margin-bottom: 15px;
+      color: #111;
+      font-family: 'Oswald', sans-serif;
+    }
+    .price {
+      font-weight: bold;
+      color: #00a859;
+      margin-top: 10px;
+    }
+    .button {
+      display: inline-block;
+      background: #00a859;
+      color: #fff;
+      padding: 12px 24px;
+      border-radius: 8px;
+      text-decoration: none;
+      margin-top: 15px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    .button:hover {
+      background: #007d43;
+    }
+    .about, .contact {
+      text-align: center;
+    }
+    .about {
+      background: none;
+      color: #000;
+      padding: 60px 20px;
+    }
+    .about p {
+      background-color: transparent;
+      padding: 0;
+      border-radius: 0;
+      max-width: 900px;
+      margin: auto;
+    }
+    footer {
+      background: #000;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+    }
+    ul {
+      padding-left: 20px;
+      margin-top: 10px;
+    }
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      header p {
+        font-size: 1rem;
+      }
+      .section {
+        padding: 40px 15px;
+      }
+      .card {
+        flex-direction: column;
+        text-align: center;
+      }
+      .card img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>GymPowerStyle</h1>
+    <p>Transformá tu cuerpo. Cambiá tu estilo. Dominá tu poder.</p>
+  </header>
+
+  <section class="section">
+    <h2>Planes y Servicios</h2>
+
+    <div class="card">
+      <div class="card-content">
+        <h3>🏁 Plan de Entrenamiento Generalizado</h3>
+        <ul>
+          <li>Ideal para principiantes o quienes buscan mantenerse activos</li>
+          <li>Rutina armada con ejercicios completos y progresivos</li>
+          <li>Foco en fuerza, resistencia y salud general</li>
+          <li>Accesible, funcional y sin vueltas</li>
+        </ul>
+        <p class="price">$12.000 ARS / 18 USD</p>
+        <a href="https://wa.me/5491157662914" class="button">Elegir este plan</a>
+      </div>
+      <img src="planDeEntrenamientoGeneralizado.jpg" alt="Entrenamiento Generalizado">
+    </div>
+
+    <div class="card">
+      <div class="card-content">
+        <h3>🏋️‍♂️ Plan de Entrenamiento Personalizado</h3>
+        <ul>
+          <li>Entrenamiento adaptado a tu objetivo: volumen, definición, fuerza o recomposición</li>
+          <li>Planificación semanal progresiva, funcional y efectiva</li>
+          <li>Acceso digital, adaptable a gimnasio o en casa</li>
+        </ul>
+        <p class="price">$15.000 ARS / 20 USD</p>
+        <a href="https://wa.me/5491157662914" class="button">Elegir este plan</a>
+      </div>
+      <img src="planDeEntrenamientoPersonalizado.jpg" alt="Entrenamiento Personalizado">
+    </div>
+
+    <div class="card">
+      <div class="card-content">
+        <h3>🥗 Plan de Entrenamiento + Plan de Nutrición Personalizado</h3>
+        <ul>
+          <li>Incluye rutina personalizada de entrenamiento</li>
+          <li>Plan alimenticio personalizado según calorías, horarios y preferencias</li>
+          <li>Ajustes mes a mes según progreso real</li>
+        </ul>
+        <p class="price">$20.000 ARS / 25 USD</p>
+        <a href="https://wa.me/5491157662914" class="button">Elegir este plan</a>
+      </div>
+      <img src="entrenamientoYnutricion.jpg" alt="Nutrición y entrenamiento">
+    </div>
+
+    <div class="card">
+      <div class="card-content">
+        <h3>👨‍🏫 Plan de Entrenamiento + Nutrición + Seguimiento Online</h3>
+        <ul>
+          <li>Incluye entrenamiento y nutrición personalizados</li>
+          <li>Seguimiento online diario por WhatsApp</li>
+          <li>Ajustes semanales según tu evolución</li>
+          <li>Motivación diaria y feedback constante</li>
+          <li>Consultas ilimitadas: técnica, suplementos, dudas reales = respuestas reales</li>
+        </ul>
+        <p class="price">$30.000 ARS / 38 USD por mes</p>
+        <a href="https://wa.me/5491157662914" class="button">Elegir este plan</a>
+      </div>
+      <img src="asesoriaOnline.jpg" alt="Seguimiento y coaching online">
+    </div>
+  </section>
+
+  <section class="section about">
+    <h2>Sobre Nosotros</h2>
+    <p>En GymPowerStyle somos un equipo de profesionales apasionados por el fitness, la salud y el bienestar integral. Con más de 8 años de experiencia, hemos acompañado a cientos de personas a transformar su cuerpo, su estilo de vida y su confianza personal a través de planes de entrenamiento y nutrición totalmente personalizados.
+    <br><br>
+    Nuestra misión es brindar un servicio serio, realista y efectivo. Sabemos que cada cuerpo es diferente, por eso trabajamos de manera individualizada, respetando tus tiempos, tus objetivos y tus posibilidades. Ya sea que quieras ganar masa muscular, perder grasa, mejorar tu rendimiento o simplemente sentirte mejor, estamos preparados para ayudarte.
+    <br><br>
+    Nos formamos constantemente en entrenamiento funcional, musculación, recomposición corporal, nutrición deportiva y asesoramiento integral. Pero más allá del conocimiento técnico, lo que nos diferencia es el acompañamiento humano: te motivamos, te guiamos, te corregimos y te impulsamos todos los días para que llegues a donde querés estar.
+    <br><br>
+    En GymPowerStyle no estás solo. Acá tenés un equipo que cree en vos, que te escucha y que transforma tu proceso en algo claro, medible y sostenible. Si estás listo para cambiar, nosotros estamos listos para entrenarte.</p>
+  </section>
+
+  <section class="section contact">
+    <h2>Contacto</h2>
+    <p>📱 WhatsApp: <a href="https://wa.me/5491157662914">+54 11 5766 2914</a></p>
+    <p>📸 Instagram: <a href="https://instagram.com/gympowerstyle">@gympowerstyle</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 GymPowerStyle. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
